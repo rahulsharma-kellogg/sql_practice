@@ -2,6 +2,9 @@
 .import reviews.csv reviews_data_raw
 .import listings.csv listings_data_raw
 
+DROP TABLE IF EXISTS listings;
+DROP TABLE IF EXISTS reviews;
+
 CREATE TABLE listings (
   id INTEGER PRIMARY KEY,
   url TEXT,
